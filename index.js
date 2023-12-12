@@ -21,3 +21,13 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = 'none';
     }
 });
+
+const scrollUp = document.querySelector(".scrollUp");
+
+window.addEventListener('scroll', () =>{
+    if(window.pageYOffset > 200){
+        scrollUp.classList.add("open");
+    } else {
+        scrollUp.classList.remove("open")
+    }
+})

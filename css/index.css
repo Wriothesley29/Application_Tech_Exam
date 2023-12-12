@@ -7,6 +7,7 @@
   body,
   html {
     height: 100%;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -159,6 +160,7 @@
 .navbarButton.open {
   transform: rotate(180deg);
   transition: 0.5s;
+  margin-right: -4rem;
 }
 .navbarButton.open span:nth-child(1) {
   transform: translateY(0.8rem);
@@ -215,8 +217,11 @@
   .navbarMenu li{
     display: none;
   }
+  .navbarButton.open{
+    margin: unset;
+  }
 }
-@media screen and (max-width: 390px){
+@media screen and (max-width: 400px){
   .navbarMenu ul{
     display: none;
   }
@@ -289,6 +294,11 @@
     margin: 2rem auto;
     padding: 1rem;
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px){
+  .serviceBanner h3{
+    font-size: 1.8rem;
   }
 }
 /* Banner Section end */
@@ -482,6 +492,7 @@
   text-shadow: 0 0 10px #c59c2d;
   transition: .5s;
 }
+
 @media screen and (max-width:820px){
   .sellingWrapper{
     flex-direction: column;
@@ -495,6 +506,11 @@
   .sellingLeftDown{
     margin: 0 2rem;
   }
+}
+@media screen and (max-width:625px){
+.sellingLeftDown{
+  flex-direction: column;
+}
 }
 @media screen and (max-width:390px){
   .sellingWrapper{
@@ -797,7 +813,11 @@
 .partnersTextItem img{
   width: 100%;
 }
-
+@media screen and (max-width: 995px) {
+  .partnersTextImg{
+    flex-wrap: wrap;
+  }
+}
 /* Partners Section End */
 
 /* Features Section start */
@@ -836,9 +856,13 @@
 }
 .featuresItemUp{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .featuresItemDown{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .featuresItem img{
   border-radius: 50%;
@@ -858,3 +882,177 @@
   }
 }
 /* Features Section End */
+
+/* contact section start */
+.contactBanner{
+  background: linear-gradient(#2b2b2b40, #2b2b2b90, #2b2b2b40), url(/img/HDbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.contactBannerText{
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.contactBannerText h2{
+  font-size: 3.5rem;
+  text-shadow: 0 0 12px #2b2b2b;
+  color: #fff;
+}
+.contactBannerText h3{
+  font-size: 1.2rem;
+  text-shadow: 0 0 12px #2b2b2b;
+  color: #ffffff;
+  margin: 2rem 0;
+}
+.contactBannerText a{
+  color: #fff;
+  background: #00000020;
+  border: 3px solid #fff;
+  padding: .8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: .5s;
+}
+.contactBannerText a:hover{
+  background: #fff;
+  color: #2b2b2b;
+  border-radius: 1rem;
+  transition: .5s;
+}
+.contactInfo{
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.contactInfoLeft{
+  max-width: 40rem;
+  margin: 1rem;
+}
+.contactInfoLeft ul{
+  display: flex;
+  margin-top: 2rem;
+}
+.contactInfoLeft li{
+  margin-right: 2rem;
+  font-size: 3rem;
+}
+.contactInfoLeft h4{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.contactInfoLeft .icons{
+  display: flex;
+  justify-content: space-between;
+}
+.contactInfoLeft img{
+  width: 3rem;
+}
+.contactInfoRight{
+  margin: 1rem;
+}
+.contactInfoRight h4{
+  font-size: 2.5rem;
+}
+.contactInfoRight input{
+  width: 100%;
+  padding: .5rem 1rem ;
+  border: 2px solid #2b2b2b;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.contactInfoRight button{
+  background: transparent;
+  border: 2px solid #2b2b2b;
+  padding: .3rem 2rem;
+  font-weight: 500;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  transition: .5s;
+}
+.contactInfoRight button:hover{
+  background: #2b2b2b;
+  scale: 1.05;
+  color: #f3f3f3;
+  transition: .5s;
+}
+.contactInfoRight li{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 820px){
+  .contact h2{
+    font-size: 2.5rem;
+  }
+  .contact h3{
+    font-size: 1rem;
+    max-width: 30rem;
+    margin: 2rem auto;
+  }
+  .contactInfo{
+    flex-direction: column;
+  }
+  .contactInfoLeft{
+    text-align: center;
+    margin: 2rem;
+  }
+  .contactInfoRight{
+    margin: 2rem;
+  }
+}
+/* contact section start */
+
+/* footer */
+
+.footer{
+  background: #2b2b2b;
+  color: #f3f3f3;
+  padding: 1rem 0;
+}
+.footerWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer span{
+  color: #c59c2d;
+}
+
+.scrollUp{
+  font-size: 2rem;
+  position: fixed;
+  bottom: 6rem;
+  right: -10rem;
+  background: #c59c2d;
+  border-radius: 50%;
+  transition: .5s;
+}
+.scrollUp.open{
+  font-size: 2rem;
+  position: fixed;
+  bottom: 2rem;
+  transform: rotate(360deg);
+  right: 5rem;
+  background: #c59c2d;
+  
+  border-radius: 50%;
+  transition: .5s;
+}
+.scrollUp:hover{
+  background: #2b2b2b;
+  box-shadow: 1px 1px 10px #00000050;
+}
+.scrollUp:hover i{
+  color: #f3f3f3;
+}
+.scrollUp i{
+  color: #2b2b2b;
+  padding: 1rem 1.3rem;
+}
