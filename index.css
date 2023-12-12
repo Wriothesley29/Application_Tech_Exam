@@ -849,4 +849,12 @@
   margin: 1rem 0;
   font-weight: 500;
 }
+@media screen and (max-width:820px) {
+  .featuresWrapper{
+    flex-direction: column;
+  }
+  .ipad{
+    margin: 3rem 1rem;
+  }
+}
 /* Features Section End */
