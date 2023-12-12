@@ -229,7 +229,7 @@
 .serviceBanner{
     margin: 0;
     padding: 0;
-    background-image: url(./img/Creative\ Background.png);
+    background-image: url(https://github.com/Wriothesley29/Application_Tech_Exam/blob/master/img/Creative%20Background.png?raw=true);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -755,7 +755,7 @@
   text-shadow: 0 0 12px #00000050;
 }
 .partnersContainer{
-  background:linear-gradient(#2b2b2b90, #2b2b2b90), url(./img/Modern\ BG.png)  center / cover no-repeat ;
+  background:linear-gradient(#2b2b2b90, #2b2b2b90), url(https://github.com/Wriothesley29/Application_Tech_Exam/blob/master/img/Modern%20BG.png?raw=true)  center / cover no-repeat ;
   padding: 5rem;
 }
 .partnersWrapper{
